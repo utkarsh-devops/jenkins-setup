@@ -1,0 +1,9 @@
+---
+galaxy_info:
+  author: Utkarsh Sharma
+  description: Jenkins Installation Role
+  license: MIT
+  min_ansible_version: 1.3
+dependencies:
+  - goozbach.EPEL
+  

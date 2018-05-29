@@ -1,0 +1,6 @@
+---
+- name: Restart Jenkins using url
+  uri: method=POST url={{ jenkins_url }}:{{ jenkins_port }}/safeRestart follow_redirects=no status_code=302
+
+- name: Restart the jenkins service
+  service: name=jenkins state=restarted enabled=yes
